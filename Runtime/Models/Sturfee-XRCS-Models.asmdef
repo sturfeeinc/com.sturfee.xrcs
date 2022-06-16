@@ -1,0 +1,17 @@
+{
+    "name": "Sturfee-XRCS-Models",
+    "rootNamespace": "",
+    "references": [
+        "GUID:f3342bdf77841184fa43ed46b62683ee",
+        "GUID:1a2810f97d211ef40ac4e52ad9eaaa2d"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
