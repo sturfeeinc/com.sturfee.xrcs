@@ -191,7 +191,7 @@ public class ThumbnailCreator : SceneSingleton<ThumbnailCreator>, IThumbnailCrea
                                                             (int)sprite.textureRect.width,
                                                             (int)sprite.textureRect.height);
             texture.SetPixels(newColors);
-            texture.Resize(m_objectToTextureCamera.snapshotTextureWidth, m_objectToTextureCamera.snapshotTextureHeight);
+            texture.Reinitialize(m_objectToTextureCamera.snapshotTextureWidth, m_objectToTextureCamera.snapshotTextureHeight);
 
             return texture;
         }
