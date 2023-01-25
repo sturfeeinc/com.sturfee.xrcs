@@ -2,6 +2,6 @@
 
 public class DigitalTwinTileItem
 {
-    public string Geohash { get; set; }
-    public List<string> Files { get; set; }
+    public string geohash { get; set; }
+    public string fileUrl { get; set; }
 }
