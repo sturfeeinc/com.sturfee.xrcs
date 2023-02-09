@@ -62,25 +62,25 @@ public class ThumbnailCreator : SceneSingleton<ThumbnailCreator>, IThumbnailCrea
             camera.orthographic = true;
             camera.clearFlags = CameraClearFlags.SolidColor;
             camera.stereoTargetEye = StereoTargetEyeMask.None;
-            camera.cullingMask = LayerMask.GetMask($"{XrLayers.XrAssetPrefab}");
+            camera.cullingMask = LayerMask.GetMask($"{XrLayers.XrPrefabs}");
 
             m_objectToTextureCamera = objectToTextureGO.AddComponent<ObjectToTexture>();
-            m_objectToTextureCamera.objectImageLayer = LayerMask.NameToLayer($"{XrLayers.XrAssetPrefab}");
+            m_objectToTextureCamera.objectImageLayer = LayerMask.NameToLayer($"{XrLayers.XrPrefabs}");
 
             Light[] lights = FindObjectsOfType<Light>();
             for (int i = 0; i < lights.Length; ++i)
             {
-                lights[i].cullingMask &= ~(LayerMask.GetMask($"{XrLayers.XrAssetPrefab}"));
+                lights[i].cullingMask &= ~(LayerMask.GetMask($"{XrLayers.XrPrefabs}"));
             }
 
             GameObject lightGO = new GameObject("Directional light");
             lightGO.transform.SetParent(objectToTextureGO.transform, false);
-            lightGO.layer = LayerMask.NameToLayer($"{XrLayers.XrAssetPrefab}");
+            lightGO.layer = LayerMask.NameToLayer($"{XrLayers.XrPrefabs}");
             lightGO.transform.rotation = Quaternion.Euler(30, 0, 0);
 
             Light light = lightGO.AddComponent<Light>();
             light.type = LightType.Directional;
-            light.cullingMask = LayerMask.GetMask($"{XrLayers.XrAssetPrefab}");
+            light.cullingMask = LayerMask.GetMask($"{XrLayers.XrPrefabs}");
         }
     }
 
