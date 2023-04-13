@@ -72,22 +72,10 @@ namespace Sturfee.XRCS.Config
 
     public enum XrLayers
     {
-        Buildings,
         Terrain,
-        MapObject,
-        PostProcessing,
-        CoverageTile,
-        Map,
-        POIMarker,
-        TransparentOcclusion,
-        RTUI, // all runtime UI
-        DigitalTwin, // TODO: remove RTObjects -- replaced by XrAssets
-        EditorUI,
-        Player,
-        XrAssetPrefab,
-        EditAsset,
-        XrAssets, // all runtime XR content
-        DtAssets // all runtime DT content (including enhancements)
+        DigitalTwin,
+        XrPrefabs,
+        XrAssets // all runtime XR content
     }
 
     public static class XrColors

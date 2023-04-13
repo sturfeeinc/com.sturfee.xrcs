@@ -19,6 +19,12 @@ public enum FeatureLayer
 
     LargeBridge,
     Terrain,
+
+    Bushes,
+    RoadMarking,
+    Signage,
+    Car,
+    Misc
 }
 
 [Serializable]
