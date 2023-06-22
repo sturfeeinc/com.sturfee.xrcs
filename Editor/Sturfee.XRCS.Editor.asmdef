@@ -2,9 +2,9 @@
     "name": "Sturfee.XRCS.Editor",
     "rootNamespace": "",
     "references": [
-        "GUID:3c92269389b449f41a89c80de0b0b31b",
-        "GUID:f50b621c179b609419b395845029c660",
-        "GUID:7cf5bec77405b5c4cbf4b2c6bc166b20"
+        "Sturfee-XRCS-Models",
+        "Sturfee-XRCS-Config",
+        "Sturfee-XRCS"
     ],
     "includePlatforms": [
         "Editor"
