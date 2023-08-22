@@ -7,6 +7,7 @@ public class XrcsUserData
     public Guid? XrcsId;
     public Guid GlobalId;
     public Guid AccountId;
+    public string RefId;
 
     public List<Guid> AccountIds;
     public List<Guid> ProjectIds;
